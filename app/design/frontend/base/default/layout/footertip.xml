@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+        <reference name="footer">
+            <action method="unsetData"><key>cache_lifetime</key></action>
+			<action method="unsetData"><key>cache_tags</key></action>
+			<block type="core/template" name="footertip"  template="footertip/footertip.phtml" before="-" />
+        </reference>
+    </default>
+</layout>

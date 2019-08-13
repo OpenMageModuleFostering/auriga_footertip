@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+    <config>
+        <modules>
+            <Auriga_Footertip>
+                <active>true</active>
+                <codePool>local</codePool>
+            </Auriga_Footertip>
+        </modules>
+    </config>

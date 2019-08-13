@@ -1,0 +1,29 @@
+<?php 
+//$footer_tip = Mage::getStoreConfig('tab1/footertip/active');
+//if($footer_tip == 1) 
+{
+
+
+		$collection = Mage::getModel('footertip/footertip')
+							->getCollection()->addFieldToFilter('status','Enabled')
+							->setRandomOrder();
+		$data= $collection->getData();					
+		
+		$countTip=count($data);
+		$tipArray=$data[0]['footertip'];
+?>
+<script>
+		
+	var tipArray=<?php echo json_encode($tipArray);?>;
+	      
+	
+	function setTip() 
+	
+	{ 
+	 document.getElementById('tip').innerHTML=tipArray;
+	
+	}
+    </script>	
+    <h2><span id="tip"><script>setTip();</script></span></h2>
+    
+<?php }?>

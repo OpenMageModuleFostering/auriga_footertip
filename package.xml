@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Auriga_Footertip</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension allow to show tips in the footer.</summary>
+    <description>In this extension we can manage footer tip from the admin panel of magento and these tips will change when page will refresh.</description>
+    <notes>First Preview Release</notes>
+    <authors><author><name>Nishant Gauttam</name><user>nishantgauttam</user><email>nishant.gauttam@gmail.com</email></author></authors>
+    <date>2013-09-03</date>
+    <time>10:24:28</time>
+    <contents><target name="magelocal"><dir name="Auriga"><dir name="Footertip"><dir name="Block"><dir name="Adminhtml"><dir name="Footertip"><dir name="Addnew"><file name="Form.php" hash="3af957e975e2c6efab5a52811a4cec2f"/></dir><file name="Addnew.php" hash="7b1ee76e0182b91a20425ae836bb1128"/><dir name="Edit"><file name="Form.php" hash="84ddad684233cc409134a3f297fc4cd9"/><dir name="Tab"><file name="Form.php" hash="2066c277bf04d9ef5b54ead2c72ef4ea"/></dir><file name="Tabs.php" hash="a3a19f1451c6500ccfc33f52658edf3a"/></dir><file name="Edit.php" hash="f64fe3fb72cd8364656a77385bf37b7f"/><file name="Grid.php" hash="ca389c785ed45c9a4a857a73ad73db4b"/></dir><file name="Footertip.php" hash="2035efdae4e699a9007d457c9e47307f"/></dir></dir><dir name="Helper"><file name="Data.php" hash="2c663e2136d6142b1e20130b6a92f815"/></dir><dir name="Model"><file name="Footertip.php" hash="f9d7e339feccd00fc805a4dd8fd5daa2"/><dir name="Mysql4"><dir name="Footertip"><file name="Collection.php" hash="5043c3eea2c695c24fe4a65aef15a9ce"/></dir><file name="Footertip.php" hash="d89ad8a6044f0d8eb4e00693fa635f04"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="FootertipController.php" hash="8bfe43b4507476d1cf4363b737787e6d"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="c53c561f8519eb80f4cf56876ee84762"/><file name="config.xml" hash="c33ba386bb3f899ceded42ca444ab85d"/></dir><dir name="sql"><dir name="footertip_setup"><file name="mysql4-install-0.1.0.php" hash="33abcdebe8ef027c145d9433f1cd6ee6"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="footertip"><file name="footertip.phtml" hash="7a56fdfc46e3988d1c07385a020885a2"/></dir></dir><dir name="layout"><file name="footertip.xml" hash="167fbb692b411653295df59fa59f8508"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Auriga_Footertip.xml" hash="79f2712ca990ffc64be28db1f2f3a228"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

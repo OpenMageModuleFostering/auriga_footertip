@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+    <config>
+        <modules>
+            <Auriga_Footertip>
+                <version>0.1.0</version>
+            </Auriga_Footertip>
+        </modules>
+		<frontend>
+			<layout>
+						<updates>
+							<footertip module="footertip">
+								<file>footertip.xml</file>
+							</footertip>
+						</updates>
+			</layout>
+	</frontend>
+        <admin>
+        <routers>
+            <!-- Includes our controller, so when we add the adminhtml menu item below, it is found! -->
+            <adminhtml>
+                 <args>
+                     <modules>
+                         <footertip before="Mage_Adminhtml">Auriga_Footertip_Adminhtml</footertip>
+                     </modules>
+                 </args>
+             </adminhtml>
+        </routers>
+    </admin>
+	   <adminhtml>
+        <menu>
+            <footertip module="footertip">
+                <title>Auriga Modules</title>
+                <sort_order>101</sort_order>               
+                <children>
+                	<footertip translate="title" module="footertip">
+                    <title>Manage Footer Tips</title>
+                    <action>adminhtml/footertip</action>
+                    <sort_order>0</sort_order>
+                	</footertip>
+                    
+                </children>
+            </footertip>
+        </menu>
+            <acl>
+                <resources>
+                    <all>
+                        <title>Allow Everything</title>
+                    </all>
+                    <admin>
+                        <children>
+                            <footertip>
+                                <title>footertip Module</title>
+                                <sort_order>200</sort_order>
+                            </footertip>
+                        </children>
+                    </admin>
+                </resources>   
+            </acl>
+        </adminhtml>   
+        <global>
+            <models>
+                <footertip>
+                    <class>Auriga_Footertip_Model</class>
+                    <resourceModel>footertip_mysql4</resourceModel>
+                </footertip>
+                <footertip_mysql4>
+                    <class>Auriga_Footertip_Model_Mysql4</class>
+                    <entities>
+                        <footertip>
+                            <table>footertip</table>
+                        </footertip>
+                    </entities>
+                </footertip_mysql4>
+            </models>
+            <resources>
+                <footertip_setup>
+                    <setup>
+                        <module>Auriga_Footertip</module>
+                    </setup>
+                    <connection>
+                        <use>core_setup</use>
+                    </connection>
+                </footertip_setup>
+                <footertip_write>
+                    <connection>
+                        <use>core_write</use>
+                    </connection>
+     
+     
+                </footertip_write>
+                <footertip_read>
+                    <connection>
+                        <use>core_read</use>
+                    </connection>
+                </footertip_read>
+            </resources>
+            <blocks>
+                <footertip>
+                    <class>Auriga_Footertip_Block</class>
+                </footertip>
+            </blocks>
+            <helpers>
+                <footertip>
+                    <class>Auriga_Footertip_Helper</class>
+                </footertip>
+            </helpers>
+        </global>
+    </config>
