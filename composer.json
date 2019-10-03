@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Auriga_Footertip",
+    "name": "OpenMageModuleFostering\/Auriga_Footertip",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "This extension allow to show tips in the footer.",
     "authors": [
-    {
-        "name": "Nishant Gauttam",
-        "email": "nishant.gauttam@gmail.com"
-    }
-],
+        {
+            "name": "Nishant Gauttam",
+            "email": "nishant.gauttam@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
